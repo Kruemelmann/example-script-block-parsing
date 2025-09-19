@@ -23,4 +23,21 @@
    - Insert HTML with scripts but prevent execution to test DOM structure.
    - Useful for verifying markup correctness without triggering event handlers or side effects.
 
+## Running the Service
+
+### Installation
+```bash
+go mod download
+```
+
+### Running
+```bash
+go run main.go
+```
+
+The service will start on port 9090. You can access:
+- **Web interface:** http://localhost:9090
+- **API endpoints:**
+  - `GET /api/scripts` - Get all script blocks
+  - `GET /api/scripts/{id}` - Get specific script block by ID
 
